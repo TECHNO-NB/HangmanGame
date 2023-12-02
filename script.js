@@ -10,5 +10,3 @@ const loadQuestion = () => {
   const randomIndex = Math.floor(Math.random() * wordList.length);
   const { word, hint } = wordList[randomIndex];
 };
-
-
