@@ -26,7 +26,11 @@
     align-items: center;
     justify-content: center;
     opacity: 1;
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
 }
 
 .left {
@@ -101,6 +105,7 @@
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 .GameOver {
     position: absolute;
     top: 50%;
@@ -148,6 +153,50 @@
     margin-top: 5px;
     font-weight: bolder;
     cursor: pointer;
+=======
+.GameOver{
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background: #fff;
+        width: 350px;
+        height: 350px;
+        display: none;
+        text-align: center;
+        border-radius: 20px;
+        z-index: 150;
+        
+      
+}
+.GameOver.show{
+        display: block;
+}
+.gameoverImg{
+      width: 150px;  
+      margin-top:40px;
+      
+}
+.GameOver h3{
+        
+        font-size:35px;
+}
+.GameOver h6{
+        font-size: 15px;
+}
+.GameOver button{
+        width: 110px;
+        height: 40px;
+       border-radius: 8px;
+        border: none;
+        background-color: crimson;
+        color: #fff;
+        font-size: 1.1rem;
+        text-align: center;
+        margin-top: 5px;
+        font-weight: bolder;
+        cursor: pointer; 
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
 }
 
 
@@ -167,7 +216,10 @@
     html {
         font-size: 95%;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
     .btn {
         width: 40px;
         height: 30px;
@@ -197,6 +249,9 @@
         width: 90%;
         height: 40%;
     }
+    
+    
+   
 
 
 
@@ -211,8 +266,13 @@
         width: 450px;
         gap: 2.5rem;
     }
+<<<<<<< HEAD
 
     .btn {
+=======
+   
+    .btn{
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
         width: 35px;
         height: 34px;
         border-radius: 5px;
@@ -238,7 +298,11 @@
         width: 450px;
         gap: 2.5rem;
     }
+<<<<<<< HEAD
 
+=======
+   
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
     .btn {
         width: 35px;
         height: 25px;
@@ -274,7 +338,10 @@
     html {
         font-size: 95%;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> e8b75924596ca47bf31fef0a0e0da35cc9e96ba2
     .btn {
         width: 27px;
         height: 30px;
@@ -306,4 +373,4 @@
     }
 
 
-}
+    }
