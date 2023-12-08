@@ -31,7 +31,7 @@ const gameOver = (bool) => {
   } else {
     gameover.classList.add("show");
     document.querySelector(".game").style.opacity = 0.8;
-    gameoverimg.src = "/images/victory.gif";
+    gameoverimg.src = "images/victory.gif";
     h3.innerText="Congrats!"
     h6.innerText="You Guessed The Correct Answer!"
   }
