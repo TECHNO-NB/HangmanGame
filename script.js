@@ -3,6 +3,11 @@ const h4=document.querySelector("h4");
 const wordDisplay=document.querySelector(".word-display");
 const chance=document.querySelector(".chance");
 const img=document.querySelector(".img");
+const gameover=document.querySelector(".GameOver");
+const gameoverimg=document.querySelector(".gameoverImg");
+const answer=document.querySelector(".answer")
+const h3=document.querySelector("h3")
+const h6=document.querySelector("h6")
 
 let count=0;
 // adding keyboard
@@ -19,7 +24,22 @@ const {word,hint}=wordList[randomIndex];
 
 
 const gameOver=(bool)=>{
+    gameover.classList.add("show");
+    document.querySelector(".game").style.opacity=0.8;
+    bool ? (answer.innerText=word):
+    ((gameoverimg.src="/images/victory.gif"),(h3.innerText="Congrats!")
+    ,(h6.innerText="You Guessed The Correct Answer!")
+    )
+}
 
+const gameOverwin=()=>{
+    const matchLetter=[...document.querySelectorAll(".letter")].map((v)=>
+        v.innerText.toLowerCase())
+        .join("")
+     matchLetter===word && gameOver(false)
+
+    // here is small mistake so please check source code 
+  
 }
 
 const  matchWord=(val)=>{
@@ -38,6 +58,7 @@ const  matchWord=(val)=>{
             letterElem[v].classList.add("guess")
         })
     }
+    gameOverwin()
  
 }
 
@@ -51,8 +72,10 @@ const loadQuestion=()=>{
 
  document.querySelectorAll(".btn").forEach((v)=>{
     v.addEventListener("click",(e)=>{
-        matchWord(e.target.innerText)
-       
+        matchWord(e.target.innerText);
+        img.src=count>=6 ?"images/hangman-6.svg" :`images/hangman-${count}.svg`;
+        // download all image from source code
+       console.log(word)
     })
  })
 }
