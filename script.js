@@ -16,7 +16,7 @@ let count = 0;
 const randomIndex = Math.floor(Math.random() * wordList.length);
 const { word, hint } = wordList[randomIndex];
 
-for (var i = 97; i <= 122; i++) {
+for (var i = 97; i < 122; i++) {
 
   let button = document.createElement("button");
   button.classList.add("btn");
